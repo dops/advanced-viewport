@@ -12,7 +12,7 @@
  */
 (function($) {
 
-    $.widget('dops.viewport', {
+    $.widget('dops.advancedViewport', {
 
         options: {
             threshold: 0,
