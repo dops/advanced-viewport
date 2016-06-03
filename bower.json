@@ -1,0 +1,15 @@
+{
+  "name": "viewport",
+  "authors": [
+    "dops <projects@michael-streb.de>"
+  ],
+  "description": "Gives you the ability to control if and how far an alement is in a particular viewport.",
+  "main": "jquery.viewport.min.js",
+  "keywords": [
+    "viewport",
+    "view",
+    "port"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.michael-streb.de/projects/viewport"
+}
