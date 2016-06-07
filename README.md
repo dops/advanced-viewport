@@ -67,7 +67,7 @@ var elem = $('.my-elem').viewport({
 ```
 This creates a "padding" of 50px on teh left and the right side of the main-viewport, but not at the top or the bottom.
 
-### Debuggin
+### Debugging
 To debug your viewports, you can use the "showViewports" option. It can take six different values:
 - all: shows all viewports
 - top: shows the top-viewport only
