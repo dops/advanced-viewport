@@ -81,6 +81,7 @@ var elem = $('.my-elem').viewport({
 });
 ```
 
-## Donate
+# Donate
+
 If you like the advanced-viewport fell free to donate.
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NKF9RJSJY7LHU)
