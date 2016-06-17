@@ -51,7 +51,7 @@ var elem = $('.my-elem').viewport({
 As you cann see, if no unit is defined, the widget treats the value as relative. Using this, you can define the four additional viewports as an inner frame of teh main-viewport.
 
 ### What if the main area of your website does not cover the whole body element?
-Threshold is the key. You cann define a singel threshold, whitch takes affect for all four sides of teh main-viewport.
+Threshold is the key. You cann define a singel threshold, whitch takes affect for all four sides of the main-viewport.
 ```
 var elem = $('.my-elem').viewport({
   threshold: 50
@@ -65,7 +65,7 @@ var elem = $('.my-elem').viewport({
   thresholdBottom: 0
 });
 ```
-This creates a "padding" of 50px on teh left and the right side of the main-viewport, but not at the top or the bottom.
+This creates a "padding" of 50px on the left and the right side of the main-viewport, but not at the top or the bottom.
 
 ### Debugging
 To debug your viewports, you can use the "showViewports" option. It can take six different values:
@@ -74,7 +74,7 @@ To debug your viewports, you can use the "showViewports" option. It can take six
 - bottom: shows the bottom-viewport only
 - left: shows the left-viewport only
 - right: shows the right-viewport only
-- false: shows none of the viewports
+- false (default): shows none of the viewports
 ```
 var elem = $('.my-elem').viewport({
   showViewports: 'all'
