@@ -18,10 +18,10 @@ var percentElemInViewport = console.log(elem.viewport('inViewport', true));
 ```
 Similar to the method "inViewport" the ar methods for teh top-, bottom-, left-, and right-viewport.
 ```
-var isElemInTopViewport = console.log(elem.viewport('inTopViewport'));
-var isElemInBottomViewport = console.log(elem.viewport('inBottomViewport'));
-var isElemInLeftViewport = console.log(elem.viewport('inLeftViewport'));
-var isElemInRightViewport = console.log(elem.viewport('inRightViewport'));
+var isElemInTopViewport    = elem.viewport('inTopViewport');
+var isElemInBottomViewport = elem.viewport('inBottomViewport');
+var isElemInLeftViewport   = elem.viewport('inLeftViewport');
+var isElemInRightViewport  = elem.viewport('inRightViewport');
 ```
 But all that gives you just the current status of an element. What if the user starts to scroll (spooky!)? The widget also provides some events. The most used would be the "positionUpdate"-event. It gives you updated informations, everytime the elements viewport status changes. E.g. this could bue used for a nice opacity effect.
 ```
