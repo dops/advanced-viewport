@@ -1,6 +1,6 @@
-# advanced-viewport
+# Advanced-Viewport
 
-Viewport does not just add jQuery selectors. It gives you comprehensive accees to an elements viewport situation. You can determine if an element is in a particular viewport, and how far it is in it. Also there is not only one viewport, but 5. A main viewport, which will be (at first) the whole screen. And then ther are four more, the top-, bottom-, left- and right-viewport.
+Advenced-Viewport does not add jQuery selectors. It gives you comprehensive accees to an elements viewport situation. You can determine if an element is in a particular viewport, and how far it is in it. Also there is not only one viewport, but 5. A main viewport, which will be (at first) the whole screen. And then ther are four more, the top-, bottom-, left- and right-viewport.
 
 ## How it works
 The viewports are defined when you apply the viewport widget to an element.
@@ -18,10 +18,10 @@ var percentElemInViewport = console.log(elem.viewport('inViewport', true));
 ```
 Similar to the method "inViewport" the ar methods for teh top-, bottom-, left-, and right-viewport.
 ```
-var isElemInTopViewport = console.log(elem.viewport('inTopViewport'));
-var isElemInBottomViewport = console.log(elem.viewport('inBottomViewport'));
-var isElemInLeftViewport = console.log(elem.viewport('inLeftViewport'));
-var isElemInRightViewport = console.log(elem.viewport('inRightViewport'));
+var isElemInTopViewport    = elem.viewport('inTopViewport');
+var isElemInBottomViewport = elem.viewport('inBottomViewport');
+var isElemInLeftViewport   = elem.viewport('inLeftViewport');
+var isElemInRightViewport  = elem.viewport('inRightViewport');
 ```
 But all that gives you just the current status of an element. What if the user starts to scroll (spooky!)? The widget also provides some events. The most used would be the "positionUpdate"-event. It gives you updated informations, everytime the elements viewport status changes. E.g. this could bue used for a nice opacity effect.
 ```
@@ -51,7 +51,7 @@ var elem = $('.my-elem').viewport({
 As you cann see, if no unit is defined, the widget treats the value as relative. Using this, you can define the four additional viewports as an inner frame of teh main-viewport.
 
 ### What if the main area of your website does not cover the whole body element?
-Threshold is the key. You cann define a singel threshold, whitch takes affect for all four sides of teh main-viewport.
+Threshold is the key. You cann define a singel threshold, whitch takes affect for all four sides of the main-viewport.
 ```
 var elem = $('.my-elem').viewport({
   threshold: 50
@@ -65,18 +65,23 @@ var elem = $('.my-elem').viewport({
   thresholdBottom: 0
 });
 ```
-This creates a "padding" of 50px on teh left and the right side of the main-viewport, but not at the top or the bottom.
+This creates a "padding" of 50px on the left and the right side of the main-viewport, but not at the top or the bottom.
 
-### Debuggin
+### Debugging
 To debug your viewports, you can use the "showViewports" option. It can take six different values:
 - all: shows all viewports
 - top: shows the top-viewport only
 - bottom: shows the bottom-viewport only
 - left: shows the left-viewport only
 - right: shows the right-viewport only
-- false: shows none of the viewports
+- false (default): shows none of the viewports
 ```
 var elem = $('.my-elem').viewport({
   showViewports: 'all'
 });
 ```
+
+## Donate
+If you like the advanced-viewport fell free to donate.
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NKF9RJSJY7LHU)
