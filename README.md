@@ -10,11 +10,11 @@ var elem = $('.my-elem').viewport();
 If you want ot know if the element is in the viewport, just call the "inViewport" method.
 ```
 var elem = $('.my-elem').viewport();
-var isElemInViewport = console.log(elem.viewport('inViewport'));
+var isElemInViewport = elem.viewport('inViewport');
 ```
 That gives you a true or false. If you add a parameter value true, you will recieve how far the element is in the viewport.
 ```
-var percentElemInViewport = console.log(elem.viewport('inViewport', true));
+var percentElemInViewport = elem.viewport('inViewport', true);
 ```
 Similar to the method "inViewport" the ar methods for teh top-, bottom-, left-, and right-viewport.
 ```
